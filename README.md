@@ -20,17 +20,17 @@ If you want to, Sia can communicate with you by being **offline to protect your 
 ### Why?
 
 > 1. If you are a developer (or not), you may want to build many things that could help in your daily life.
-> Instead of building a dedicated project for each of those ideas, Leon can help you with his
+> Instead of building a dedicated project for each of those ideas, Sia can help you with his
 > packages/modules (skills) structure.
 > 2. With this generic structure, everyone can create their own modules and share them with others.
 > Therefore there is only one core (to rule them all).
 > 3. Leon uses AI concepts, which is cool.
-> 4. Privacy matters, you can configure Leon to talk with him offline. You can already text with him without any third party services.
+> 4. Privacy matters, you can configure Sia to talk with her offline. You can already text with her without any third party services.
 > 5. Open source is great.
 
 ### What is this repository for?
 
-> This repository contains the following nodes of Leon:
+> This repository contains the following nodes of Sia:
 > - The server
 > - The packages/modules
 > - The web app
@@ -63,7 +63,7 @@ Gitpod will automatically setup an environment and run an instance for you.
 
 ```sh
 # Clone the repository (stable branch)
-git clone -b master https://github.com/NXture/sia.git sia
+git clone -b master https://github.com/NXture/Sia.git sia
 
 
 # Go to the project root
@@ -94,11 +94,11 @@ npm start
 
 ## 👨 Author
 
-**Varun Srivatsa** ([@Varun27101](https://twitter.com/varun27101))
+**Varun Srivatsa** ([@Varun27101](https://twitter.com/Varun27101))
 
 
 ## 📝 License
-[MIT License](https://github.com/NXture/Sia/blob/develop/LICENSE.md)
+[MIT License](https://github.com/NXture/Sia/blob/main/LICENSE.md)
 
 Copyright (c) 2021-present, Varun Srivatsa <varunsrivatsa27@gmail.com>
 
