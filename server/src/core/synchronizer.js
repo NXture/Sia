@@ -177,7 +177,7 @@ class Synchronizer {
               return true
             })
           }
-          // Browse entities in Leon's memory
+          // Browse entities in Sia's memory
           for (let i = 0; i < entities.length; i += 1) {
             // Upload file to Drive
             upload(i)

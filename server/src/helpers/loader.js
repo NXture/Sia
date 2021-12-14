@@ -7,7 +7,7 @@ const sentences = [
   'This will take a while, grab a drink and come back later',
   'Go for a walk, this action takes time',
   'That will take some time, let\'s chill and relax',
-  'Leon will be ready for you in a moment'
+  'Sia will be ready for you in a moment'
 ]
 const spinner = new Spinner('\x1b[95m%s\x1b[0m\r').setSpinnerString(18)
 const loader = { }
