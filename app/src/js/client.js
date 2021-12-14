@@ -36,11 +36,11 @@ export default class Client {
     })
 
     this.socket.on('answer', (data) => {
-      this.chatbot.receivedFrom('leon', data)
+      this.chatbot.receivedFrom('sia', data)
     })
 
     this.socket.on('is-typing', (data) => {
-      this.chatbot.isTyping('leon', data)
+      this.chatbot.isTyping('sia', data)
     })
 
     this.socket.on('recognized', (data, cb) => {
@@ -107,7 +107,7 @@ export default class Client {
   send (keyword) {
     if (this._input.value !== '') {
       this.socket.emit(keyword, { client: this.client, value: this._input.value.trim() })
-      this.chatbot.sendTo('leon', this._input.value)
+      this.chatbot.sendTo('sia', this._input.value)
 
       this.save()
 

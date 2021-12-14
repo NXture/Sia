@@ -4,6 +4,6 @@
 import utils
 
 def run(string, entities):
-	"""Leon welcomes you"""
+	"""Sia welcomes you"""
 
 	return utils.output('end', 'welcome', utils.translate('welcome'))

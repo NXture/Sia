@@ -45,11 +45,7 @@
     "start": "cross-env SIA_NODE_ENV=production node ./server/dist/index.js",
     "train": "babel-node scripts/run-train.js",
     "prepare-release": "babel-node scripts/release/prepare-release.js",
-    "check": "babel-node scripts/run-check.js",
-    "docker:build": "docker build -t leonai/leon .",
-    "docker:run": "docker-compose up",
-    "docker:dev": "docker-compose --file=docker-compose.dev.yml up",
-    "docker:check": "docker run --rm -it leonai/leon npm run check"
+    "check": "babel-node scripts/run-check.js"
   },
   "dependencies": {
     "@aws-sdk/client-polly": "^3.18.0",

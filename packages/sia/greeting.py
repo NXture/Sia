@@ -6,7 +6,7 @@ from datetime import datetime
 from random import randint
 
 def run(string, entities):
-	"""Leon greets you"""
+	"""Sia greets you"""
 
 	time = datetime.time(datetime.now())
 

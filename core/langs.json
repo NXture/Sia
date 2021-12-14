@@ -12,7 +12,7 @@
       "fallbacks": [
         {
           "words": ["merci"],
-          "package": "leon",
+          "package": "sia",
           "module": "welcome",
           "action": "run"
         }
