@@ -34,7 +34,7 @@ class Server {
     this.fastify.addHook('onRequest', otherMidd)
 
     log.title('Initialization')
-    log.success(`The current env is ${process.env.LEON_NODE_ENV}`)
+    log.success(`The current env is ${process.env.SIA_NODE_ENV}`)
     log.success(`The current version is ${version}`)
 
     if (!Object.keys(langs).includes(process.env.LEON_LANG) === true) {
@@ -72,7 +72,7 @@ class Server {
     this.httpServer = this.fastify.server
 
     try {
-      await this.listen(process.env.LEON_PORT)
+      await this.listen(process.env.SIA_PORT)
     } catch (e) {
       log.error(e.message)
     }
@@ -82,14 +82,14 @@ class Server {
    * Launch server
    */
   async listen (port) {
-    const io = process.env.LEON_NODE_ENV === 'development'
-      ? socketio(this.httpServer, { cors: { origin: `${process.env.LEON_HOST}:3000` } })
+    const io = process.env.SIA_NODE_ENV === 'development'
+      ? socketio(this.httpServer, { cors: { origin: `${process.env.SIA_HOST}:3000` } })
       : socketio(this.httpServer)
 
     io.on('connection', this.connection)
 
     await this.fastify.listen(port, '0.0.0.0')
-    log.success(`Server is available at ${process.env.LEON_HOST}:${port}`)
+    log.success(`Server is available at ${process.env.SIA_HOST}:${port}`)
   }
 
   /**

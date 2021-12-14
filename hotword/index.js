@@ -10,9 +10,9 @@ const record = require('node-record-lpcm16')
 const { Detector, Models } = require('snowboy')
 const { io } = require('socket.io-client')
 
-process.env.LEON_HOST = process.env.LEON_HOST || 'http://localhost'
-process.env.LEON_PORT = process.env.LEON_PORT || 1337
-const url = `${process.env.LEON_HOST}:${process.env.LEON_PORT}`
+process.env.SIA_HOST = process.env.SIA_HOST || 'http://localhost'
+process.env.SIA_PORT = process.env.SIA_PORT || 1337
+const url = `${process.env.SIA_HOST}:${process.env.SIA_PORT}`
 const socket = io(url)
 
 socket.on('connect', () => {

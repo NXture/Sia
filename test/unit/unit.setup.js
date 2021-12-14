@@ -16,8 +16,8 @@ global.audio = {
 global.enExpressions = expressions
 
 process.env.LEON_LANG = 'en-US'
-process.env.LEON_HOST = 'http://localhost'
-process.env.LEON_PORT = 1338
+process.env.SIA_HOST = 'http://localhost'
+process.env.SIA_PORT = 1338
 process.env.LEON_TIME_ZONE = global.date.time_zone
 process.env.LEON_TTS = true.toString()
 process.env.LEON_TTS_PROVIDER = 'flite'

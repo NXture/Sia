@@ -13,7 +13,7 @@ log.error = (value) => {
   const errMessage = 'Not able to log the error'
   const data = `${date.dateTime()} - ${value}`
 
-  if (process.env.LEON_NODE_ENV !== 'testing') {
+  if (process.env.SIA_NODE_ENV !== 'testing') {
     /* istanbul ignore next */
     if (!fs.existsSync(path)) {
       fs.writeFile(path, data, { flags: 'wx' }, (err) => {

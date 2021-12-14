@@ -39,7 +39,7 @@ class Stt {
     }
 
     /* istanbul ignore if */
-    if (process.env.LEON_NODE_ENV !== 'testing') {
+    if (process.env.SIA_NODE_ENV !== 'testing') {
       // Dynamically attribute the parser
       this.parser = require(`${__dirname}/${this.provider}/parser`) // eslint-disable-line global-require
       this.parser.default.init(this.parser.default.conf)
@@ -80,7 +80,7 @@ class Stt {
 
     const buffer = fs.readFileSync(file)
     /* istanbul ignore if */
-    if (process.env.LEON_NODE_ENV !== 'testing') {
+    if (process.env.SIA_NODE_ENV !== 'testing') {
       this.parser.default.parse(buffer, (data) => {
         if (data.string !== '') {
           // Forward the string to the client

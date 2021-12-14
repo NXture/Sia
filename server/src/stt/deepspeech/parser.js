@@ -60,7 +60,7 @@ parser.init = (args) => {
   }
 
   /* istanbul ignore if */
-  if (process.env.LEON_NODE_ENV !== 'testing') {
+  if (process.env.SIA_NODE_ENV !== 'testing') {
     model = new DeepSpeech.Model(args.model)
     desiredSampleRate = model.sampleRate()
 
@@ -83,7 +83,7 @@ parser.parse = (buffer, cb) => {
   }
 
   /* istanbul ignore if */
-  if (process.env.LEON_NODE_ENV !== 'testing') {
+  if (process.env.SIA_NODE_ENV !== 'testing') {
     const string = model.stt(buffer)
 
     cb({ string })

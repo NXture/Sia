@@ -47,7 +47,7 @@ describe('server', () => {
       const server = new Server()
       await server.init()
 
-      fakeServer.listen(process.env.LEON_PORT)
+      fakeServer.listen(process.env.SIA_PORT)
       await server.httpServer.close()
     })
 
@@ -55,8 +55,8 @@ describe('server', () => {
       const server = new Server()
       console.log = jest.fn()
 
-      await server.listen(process.env.LEON_PORT)
-      expect(console.log.mock.calls[0][1].indexOf(process.env.LEON_PORT)).not.toBe(-1)
+      await server.listen(process.env.SIA_PORT)
+      expect(console.log.mock.calls[0][1].indexOf(process.env.SIA_PORT)).not.toBe(-1)
     })
   })
 

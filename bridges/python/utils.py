@@ -110,6 +110,6 @@ def db(dbtype = 'tinydb'):
 	for a specific package"""
 
 	if dbtype == 'tinydb':
-		ext = '.json' if environ.get('LEON_NODE_ENV') != 'testing' else '.spec.json'
+		ext = '.json' if environ.get('SIA_NODE_ENV') != 'testing' else '.spec.json'
 		db = TinyDB(dirname + '/../../packages/' + queryobj['package'] + '/data/db/' + queryobj['package'] + ext)
 		return { 'db': db, 'query': Query, 'operations': operations }

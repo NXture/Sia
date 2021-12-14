@@ -8,12 +8,12 @@ import { onkeydowndocument, onkeydowninput } from './onkeydown'
 
 const config = {
   app: 'webapp',
-  server_host: import.meta.env.VITE_LEON_HOST,
-  server_port: import.meta.env.VITE_LEON_PORT,
+  server_host: import.meta.env.VITE_SIA_HOST,
+  server_port: import.meta.env.VITE_SIA_PORT,
   min_decibels: -40, // Noise detection sensitivity
   max_blank_time: 1000 // Maximum time to consider a blank (ms)
 }
-const serverUrl = import.meta.env.VITE_LEON_NODE_ENV === 'production' ? '' : `${config.server_host}:${config.server_port}`
+const serverUrl = import.meta.env.VITE_SIA_NODE_ENV === 'production' ? '' : `${config.server_host}:${config.server_port}`
 
 document.addEventListener('DOMContentLoaded', () => {
   const loader = new Loader()
