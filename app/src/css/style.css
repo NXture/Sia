@@ -199,7 +199,7 @@ small {
 .bubble-container.me {
   text-align: right;
 }
-.bubble-container.leon {
+.bubble-container.sia {
   text-align: left;
 }
 
@@ -218,7 +218,7 @@ small {
   color: #FFF;
   right: 0;
 }
-#feed .leon .bubble {
+#feed .sia .bubble {
   background-color: #EEE;
   color: #151718;
 }
