@@ -8,10 +8,10 @@
     "url": "https://twitter.com/varun27101"
   },
   "license": "MIT",
-  "homepage": "https://getleon.ai",
+  "homepage": "https://varunsrivatsa.dev",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leon-ai/leon.git"
+    "url": "git+https://github.com/NXture/Sia.git"
   },
   "bugs": {
     "url": "https://github.com/NXture/Sia/issues"
