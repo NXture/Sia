@@ -1,7 +1,7 @@
 describe('sia:partnerassistant', async () => {
   test('does not know this personal assistant', async () => {
     global.nlu.brain.execute = jest.fn()
-    await global.nlu.process('Tell me about the personal assistant Louistiti')
+    await global.nlu.process('Tell me about the personal assistant Varun')
 
     const [obj] = global.nlu.brain.execute.mock.calls
     await global.brain.execute(obj[0])

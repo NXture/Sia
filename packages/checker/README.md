@@ -27,11 +27,11 @@ Verify if one or several email addresses have been pwned (thanks to [Have I Been
 2. Then paste it in `packages/checker/config/config.json` at the `haveibeenpwned.api_key` key.
 
 ```
-(en-US) "Has louis.grenard@gmail.com been pwned?"
-(en-US) "Have iifeoluwa.ao@gmail.com, louis.grenard@gmail.com, and supercleanemail@test.com been pwned?"
+(en-US) "Has varunsrivatsa27@gmail.com been pwned?"
+(en-US) "Have iifeoluwa.ao@gmail.com, varunsrivatsa27@gmail.com, and supercleanemail@test.com been pwned?"
 
-(fr-FR) "Est-ce que louis.grenard@gmail.com est compromis ?"
-(fr-FR) "Est-ce que iifeoluwa.ao@gmail.com, louis.grenard@gmail.com, et supercleanemail@test.com ont été compromis ?"
+(fr-FR) "Est-ce que varunsrivatsa27@gmail.com est compromis ?"
+(fr-FR) "Est-ce que iifeoluwa.ao@gmail.com, varunsrivatsa27@gmail.com, et supercleanemail@test.com ont été compromis ?"
 ```
 
 You can also predefine one or several email addresses in the `packages/checker/config/config.json` file at the `haveibeenpwned.emails` key.
