@@ -76,7 +76,7 @@ def output(type, code, speech = ''):
 		stdout.flush()
 
 def http(method, url, headers = None):
-	"""Send HTTP request with the Leon user agent"""
+	"""Send HTTP request with the Sia user agent"""
 
 	session = requests.Session()
 	session.headers.update({ 'User-Agent': useragent, 'Cache-Control': 'no-cache' })

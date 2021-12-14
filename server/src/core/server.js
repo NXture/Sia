@@ -138,7 +138,7 @@ class Server {
 
         // Train modules expressions
         try {
-          await this.nlu.loadModel(join(__dirname, '../data/leon-model.nlp'))
+          await this.nlu.loadModel(join(__dirname, '../data/sia-model.nlp'))
         } catch (e) {
           log[e.type](e.obj.message)
         }

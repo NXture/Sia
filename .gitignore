@@ -23,6 +23,6 @@ debug.log
 !**/*.sample*
 packages/**/config/config.json
 packages/**/data/db/*.json
-server/src/data/leon-model.nlp
+server/src/data/sia-model.nlp
 package.json.backup
 .python-version

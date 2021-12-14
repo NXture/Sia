@@ -24,7 +24,7 @@ If you want to, Sia can communicate with you by being **offline to protect your 
 > packages/modules (skills) structure.
 > 2. With this generic structure, everyone can create their own modules and share them with others.
 > Therefore there is only one core (to rule them all).
-> 3. Leon uses AI concepts, which is cool.
+> 3. Sia uses AI concepts, which is cool.
 > 4. Privacy matters, you can configure Sia to talk with her offline. You can already text with her without any third party services.
 > 5. Open source is great.
 
@@ -67,7 +67,7 @@ git clone -b master https://github.com/NXture/Sia.git sia
 
 
 # Go to the project root
-cd leon
+cd Sia
 
 # Install
 npm install
@@ -86,7 +86,7 @@ npm run build
 npm start
 
 # Go to http://localhost:1337
-# Hooray! Leon is running
+# Hooray! Sia is running
 ```
 
 **Sia needs open source to live**, the more modules she has, the more skillful she becomes.

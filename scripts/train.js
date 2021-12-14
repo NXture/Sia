@@ -19,7 +19,7 @@ dotenv.config()
 export default () => new Promise(async (resolve, reject) => {
   const { argv } = process
   const packagesDir = 'packages'
-  const modelFileName = 'server/src/data/leon-model.nlp'
+  const modelFileName = 'server/src/data/sia-model.nlp'
   let type = (argv[2]) ? argv[2].toLowerCase() : 'expressions'
   let lang = ''
 
