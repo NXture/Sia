@@ -28,7 +28,7 @@ Grab the Product Hunt trends.
 #### Usage
 
 1. Log in to your [Product Hunt](https://www.producthunt.com/) account.
-2. Add a [new application](https://www.producthunt.com/v1/oauth/applications) (E.g. name: Leon; Redirect URI: https://localhost).
+2. Add a [new application](https://www.producthunt.com/v1/oauth/applications) (E.g. name: Sia; Redirect URI: https://localhost).
 3. Once your application is created, click `Create Token`.
 4. Copy the `Developer Token` and paste it in `packages/trend/config/config.json` at the `producthunt.developer_token` key.
 

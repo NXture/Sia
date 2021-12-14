@@ -2,7 +2,7 @@
 	"isitdown": {
     "run": {
       "expressions": [
-        "Is getleon.ai up?",
+        "Is varundrivatsa.dev up?",
         "Is mozilla.org down?",
         "Is mozilla.org up or down?",
         "Is github.com up?",

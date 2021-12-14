@@ -20,7 +20,7 @@ global.date = {
 }
 
 process.env.SIA_LANG = 'en-US'
-process.env.LEON_TIME_ZONE = global.date.time_zone
+process.env.SIA_TIME_ZONE = global.date.time_zone
 
 beforeAll(async () => {
   await global.nlu.loadModel(global.paths.nlp_model)

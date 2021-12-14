@@ -1,4 +1,4 @@
-describe('leon:meaningoflife', async () => {
+describe('sia:meaningoflife', async () => {
   test('says the meaning of life', async () => {
     global.nlu.brain.execute = jest.fn()
     await global.nlu.process('What is the meaning of life?')

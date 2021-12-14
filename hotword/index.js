@@ -1,5 +1,5 @@
 /**
- * This file allows to run a separate node to detect the wake word "Leon/Léon"
+ * This file allows to run a separate node to detect the wake word "Sia"
  * You can consider to run this file on a different hardware
  */
 
@@ -33,9 +33,9 @@ request.get(`${url}/v1/info`)
       const models = new Models()
 
       models.add({
-        file: `${__dirname}/models/leon-${res.body.lang.short}.pmdl`,
+        file: `${__dirname}/models/sia-${res.body.lang.short}.pmdl`,
         sensitivity: '0.5',
-        hotwords: `leon-${res.body.lang.short}`
+        hotwords: `sia-${res.body.lang.short}`
       })
 
       const detector = new Detector({

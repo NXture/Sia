@@ -18,6 +18,6 @@ global.enExpressions = expressions
 process.env.SIA_LANG = 'en-US'
 process.env.SIA_HOST = 'http://localhost'
 process.env.SIA_PORT = 1338
-process.env.LEON_TIME_ZONE = global.date.time_zone
+process.env.SIA_TIME_ZONE = global.date.time_zone
 process.env.SIA_TTS = true.toString()
 process.env.SIA_TTS_PROVIDER = 'flite'

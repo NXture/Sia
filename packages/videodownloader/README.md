@@ -16,8 +16,6 @@ Download new video(s) from a YouTube playlist.
 
 ```
 (en-US) "Download new videos from YouTube"
-
-(fr-FR) "Télécharges les nouvelles vidéos depuis YouTube"
 ...
 ```
 
@@ -25,7 +23,6 @@ Download new video(s) from a YouTube playlist.
 
 ##### Synchronization
 
-[Read the docs](https://docs.getleon.ai/configuration#synchronizer).
 
 #### Links
 

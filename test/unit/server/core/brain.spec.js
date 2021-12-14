@@ -67,7 +67,7 @@ describe('brain', () => {
         query: 'Hello',
         entities: [],
         classification: {
-          package: 'leon',
+          package: 'sia',
           module: 'greeting',
           action: 'run',
           confidence: 0.9
@@ -114,7 +114,7 @@ describe('brain', () => {
         query: 'Hello',
         entities: [],
         classification: {
-          package: 'leon',
+          package: 'sia',
           module: 'greeting',
           action: 'run',
           confidence: 0.9

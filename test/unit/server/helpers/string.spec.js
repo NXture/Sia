@@ -3,20 +3,20 @@ import string from '@/helpers/string'
 describe('string helper', () => {
   describe('pnr()', () => {
     test('replaces substring to a string defined in an object', () => {
-      expect(string.pnr('Hello %name%', { '%name%': 'Leon' })).toBe('Hello Leon')
+      expect(string.pnr('Hello %name%', { '%name%': 'Sia' })).toBe('Hello Sia')
     })
   })
 
   describe('ucfirst()', () => {
     test('transforms first letter to uppercase', () => {
-      expect(string.ucfirst('leon')).toBe('Leon')
+      expect(string.ucfirst('Sia')).toBe('Sia')
     })
   })
 
   describe('snakeToPascalCase()', () => {
     test('transforms snake_case string to PascalCase', () => {
-      expect(string.snakeToPascalCase('leon')).toBe('Leon')
-      expect(string.snakeToPascalCase('this_is_leon')).toBe('ThisIsLeon')
+      expect(string.snakeToPascalCase('sia')).toBe('Sia')
+      expect(string.snakeToPascalCase('this_is_sia')).toBe('ThisIsSia')
     })
   })
 

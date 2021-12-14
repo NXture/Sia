@@ -63,7 +63,7 @@ describe('NLU', () => {
       const fallbackObj = {
         query,
         entities: [],
-        classification: { package: 'leon', module: 'randomnumber', action: 'run' }
+        classification: { package: 'sia', module: 'randomnumber', action: 'run' }
       }
       const nlu = new Nlu()
       nlu.brain = { execute: jest.fn() }

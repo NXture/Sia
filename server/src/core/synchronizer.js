@@ -55,7 +55,7 @@ class Synchronizer {
   googleDrive () {
     /* istanbul ignore next */
     return new Promise((resolve, reject) => {
-      const driveFolderName = `leon-${this.classification.package}-${this.classification.module}`
+      const driveFolderName = `sia-${this.classification.package}-${this.classification.module}`
       const folderMimeType = 'application/vnd.google-apps.folder'
       const entities = fs.readdirSync(this.downloadDir)
       const key = JSON.parse(fs.readFileSync(`${__dirname}/../config/synchronizer/google-drive.json`, 'utf8'))
@@ -134,7 +134,7 @@ class Synchronizer {
                   role: 'owner',
                   emailAddress: this.sync.email
                 },
-                emailMessage: 'Hey, I created a new folder to wrap your new content, cheers. Leon.',
+                emailMessage: 'Hey, I created a new folder to wrap your new content, cheers. Sia.',
                 transferOwnership: true,
                 fileId: folderId
               }, (err) => {

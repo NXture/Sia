@@ -6,7 +6,7 @@ import Nlu from '@/core/nlu'
 import Brain from '@/core/brain'
 
 /**
- * This test will test the Leon's NLP (Natural Language Processing):
+ * This test will test the Sia's NLP (Natural Language Processing):
  * 1. Browse every expression for each module
  * 2. Check if it matches its respective module
  *
