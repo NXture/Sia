@@ -1,11 +1,11 @@
 {
-  "name": "leon",
+  "name": "sia",
   "version": "1.0.0-beta.5+dev",
-  "description": "Server, packages and web app of the Leon personal assistant",
+  "description": "Server, packages and web app of the Sia personal assistant",
   "author": {
-    "name": "Louis Grenard",
-    "email": "louis.grenard@gmail.com",
-    "url": "https://twitter.com/louistiti_fr"
+    "name": "Varun Srivatsa",
+    "email": "varunsrivatsa27@gmail.com",
+    "url": "https://twitter.com/varun27101"
   },
   "license": "MIT",
   "homepage": "https://getleon.ai",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/leon-ai/leon.git"
   },
   "bugs": {
-    "url": "https://github.com/leon-ai/leon/issues"
+    "url": "https://github.com/NXture/Sia/issues"
   },
   "engines": {
     "node": ">=16.0.0",
