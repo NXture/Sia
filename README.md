@@ -40,7 +40,7 @@ If you want to, Sia can communicate with you by being **offline to protect your 
 
 > Today, the most interesting part is about her core and the way she can scale up. She is pretty young but can easily scale to have new features (packages/modules).
 
-Sounds cool right? Then let's get started!
+Sounds cool right?
 
 ## ☁️ Try with a Single-Click
 

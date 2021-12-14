@@ -5,13 +5,13 @@ labels: bug
 ---
 
 <!--
-Thanks for your interest in Leon! ❤️
+Thanks for your interest in Sia! ❤️
 Please check if there is no similar issue before creating this one.
 -->
 
 ### Specs
 
-- Leon version:
+- Sia version:
 - OS (or browser) version:
 - Node.js version:
 - Complete "npm run check" output:

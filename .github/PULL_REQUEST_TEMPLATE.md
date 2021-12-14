@@ -1,13 +1,12 @@
 <!--
 
-Thanks a lot for your interest in contributing to Leon! :heart:
+Thanks a lot for your interest in contributing to Sia! :heart:
 
 Please first discuss the change you wish to make via issue,
 email, or any other method with the owners of this repository before making a change.
 It might avoid a waste of your time.
 
-Before submitting your contribution, please take a moment to review this document:
-https://github.com/leon-ai/leon/blob/develop/.github/CONTRIBUTING.md
+
 
 Please place an x (no spaces - [x]) in all [ ] that apply.
 

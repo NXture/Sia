@@ -44,10 +44,10 @@ class Brain {
   }
 
   /**
-   * Make Leon talk
+   * Make Sia talk
    */
   talk (rawSpeech, end = false) {
-    log.title('Leon')
+    log.title('Sia')
     log.info('Talking...')
 
     if (rawSpeech !== '') {
