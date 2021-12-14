@@ -1,0 +1,4 @@
+node_modules/
+bridges/python/.venv/*
+
+!bridges/python/.venv/.gitkeep

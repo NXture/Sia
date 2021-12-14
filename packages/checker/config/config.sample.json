@@ -1,0 +1,10 @@
+{
+	"isitdown": {
+		"options": {}
+	},
+  "haveibeenpwned": {
+    "api_key": "YOUR_API_KEY",
+    "emails": [],
+    "options": {}
+  }
+}
