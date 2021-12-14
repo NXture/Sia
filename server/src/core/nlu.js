@@ -70,7 +70,7 @@ class Nlu {
       return false
     }
 
-    const lang = langs[process.env.LEON_LANG].short
+    const lang = langs[process.env.SIA_LANG].short
     const result = await this.nlp.process(lang, query)
 
     const {
@@ -89,7 +89,7 @@ class Nlu {
     }
 
     /* istanbul ignore next */
-    if (process.env.LEON_LOGGER === 'true' && process.env.SIA_NODE_ENV !== 'testing') {
+    if (process.env.SIA_LOGGER === 'true' && process.env.SIA_NODE_ENV !== 'testing') {
       this.request
         .post('https://logger.getleon.ai/v1/expressions')
         .set('X-Origin', 'leon-core')
@@ -104,7 +104,7 @@ class Nlu {
     }
 
     if (intent === 'None') {
-      const fallback = Nlu.fallback(obj, langs[process.env.LEON_LANG].fallbacks)
+      const fallback = Nlu.fallback(obj, langs[process.env.SIA_LANG].fallbacks)
 
       if (fallback === false) {
         this.brain.talk(`${this.brain.wernicke('random_unknown_queries')}.`, true)

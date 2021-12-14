@@ -25,7 +25,7 @@ synthesizer.init = () => {
   const flitePath = 'bin/flite/flite'
 
   /* istanbul ignore if */
-  if (process.env.LEON_LANG !== 'en-US') {
+  if (process.env.SIA_LANG !== 'en-US') {
     log.warning('The Flite synthesizer only accepts the "en-US" language for the moment')
   }
 

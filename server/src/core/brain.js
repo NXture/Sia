@@ -25,9 +25,9 @@ class Brain {
     log.title('Brain')
     log.success('New instance')
 
-    if (process.env.LEON_TTS === 'true') {
+    if (process.env.SIA_TTS === 'true') {
       // Init TTS
-      this.tts = new Tts(this.socket, process.env.LEON_TTS_PROVIDER)
+      this.tts = new Tts(this.socket, process.env.SIA_TTS_PROVIDER)
       this.tts.init()
     }
   }
@@ -51,7 +51,7 @@ class Brain {
     log.info('Talking...')
 
     if (rawSpeech !== '') {
-      if (process.env.LEON_TTS === 'true') {
+      if (process.env.SIA_TTS === 'true') {
         // Stripe HTML to a whitespace. Whitespace to let the TTS respects punctuation
         const speech = rawSpeech.replace(/<(?:.|\n)*?>/gm, ' ')
 
@@ -98,7 +98,7 @@ class Brain {
       const queryObjectPath = `${__dirname}/../tmp/${queryId}.json`
 
       // Ask to repeat if Leon is not sure about the request
-      if (obj.classification.confidence < langs[process.env.LEON_LANG].min_confidence) {
+      if (obj.classification.confidence < langs[process.env.SIA_LANG].min_confidence) {
         this.talk(`${this.wernicke('random_not_sure')}.`, true)
         this.socket.emit('is-typing', false)
 
@@ -116,7 +116,7 @@ class Brain {
            */
           const queryObj = {
             id: queryId,
-            lang: langs[process.env.LEON_LANG].short,
+            lang: langs[process.env.SIA_LANG].short,
             package: obj.classification.package,
             module: obj.classification.module,
             action: obj.classification.action,

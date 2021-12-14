@@ -26,7 +26,7 @@ const voices = {
 let client = { }
 
 synthesizer.conf = {
-  voice: voices[process.env.LEON_LANG],
+  voice: voices[process.env.SIA_LANG],
   audioConfig: {
     audioEncoding: 'MP3'
   }

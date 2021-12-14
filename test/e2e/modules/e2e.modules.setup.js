@@ -19,7 +19,7 @@ global.date = {
   time_zone: moment.tz.guess()
 }
 
-process.env.LEON_LANG = 'en-US'
+process.env.SIA_LANG = 'en-US'
 process.env.LEON_TIME_ZONE = global.date.time_zone
 
 beforeAll(async () => {

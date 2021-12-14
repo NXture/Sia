@@ -22,7 +22,7 @@ const voices = {
 let client = { }
 
 synthesizer.conf = {
-  voice: voices[process.env.LEON_LANG].voice,
+  voice: voices[process.env.SIA_LANG].voice,
   accept: 'audio/wav'
 }
 

@@ -22,7 +22,7 @@ let client = { }
 
 synthesizer.conf = {
   OutputFormat: 'mp3',
-  VoiceId: voices[process.env.LEON_LANG].VoiceId
+  VoiceId: voices[process.env.SIA_LANG].VoiceId
 }
 
 /**

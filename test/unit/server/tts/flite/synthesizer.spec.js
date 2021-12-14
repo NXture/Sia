@@ -11,7 +11,7 @@ describe('Flite TTS synthesizer', () => {
       })
 
       test('returns warning message to say only "en-US" language is accepted', () => {
-        process.env.LEON_LANG = 'fake-lang'
+        process.env.SIA_LANG = 'fake-lang'
         console.warn = jest.fn()
 
         synthesizer.init()

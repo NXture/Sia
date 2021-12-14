@@ -26,7 +26,7 @@ export default () => new Promise(async (resolve, reject) => {
   if (type.indexOf(':') !== -1) {
     [type, lang] = type.split(':')
   } else {
-    lang = langs[process.env.LEON_LANG].short.toLowerCase().substr(0, 2)
+    lang = langs[process.env.SIA_LANG].short.toLowerCase().substr(0, 2)
   }
 
   try {

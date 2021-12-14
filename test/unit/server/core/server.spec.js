@@ -18,10 +18,10 @@ describe('server', () => {
       const server = new Server()
 
       server.bootstrap = jest.fn() // Need to mock bootstrap method to not continue the init
-      process.env.LEON_LANG = 'fake-lang'
+      process.env.SIA_LANG = 'fake-lang'
 
       await server.init()
-      expect(process.env.LEON_LANG).toBe('en-US')
+      expect(process.env.SIA_LANG).toBe('en-US')
     })
   })
 

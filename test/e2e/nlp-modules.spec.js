@@ -33,7 +33,7 @@ describe('NLU modules', () => {
       brain.talk = jest.fn()
 
       beforeAll(async () => {
-        process.env.LEON_LANG = langKeys[i]
+        process.env.SIA_LANG = langKeys[i]
 
         // Generate new NLP model for the tested language
         await command(`npm run train expressions:${lang.short}`, { shell: true })

@@ -1,11 +1,11 @@
 {
-  "name": "leon-hotword",
+  "name": "sia-hotword",
   "version": "0.2.0",
-  "description": "Hotword detection for Leon",
+  "description": "Hotword detection for sia",
   "author": {
-    "name": "Louis Grenard",
-    "email": "louis.grenard@gmail.com",
-    "url": "https://twitter.com/louistiti_fr"
+    "name": "Varun Srivatsa",
+    "email": "varunsrivatsa27@gmail.com",
+    "url": "https://twitter.com/Varun27101"
   },
   "main": "index.js",
   "scripts": {

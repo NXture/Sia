@@ -12,7 +12,7 @@ let client = { }
 
 parser.conf = {
   contentType: 'audio/wav',
-  model: `${process.env.LEON_LANG}_BroadbandModel`
+  model: `${process.env.SIA_LANG}_BroadbandModel`
 }
 
 /**

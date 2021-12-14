@@ -41,7 +41,7 @@ parser.conf = {
  */
 parser.init = (args) => {
   /* istanbul ignore if */
-  if (process.env.LEON_LANG !== 'en-US') {
+  if (process.env.SIA_LANG !== 'en-US') {
     log.warning('The DeepSpeech parser only accepts the "en-US" language for the moment')
   }
 

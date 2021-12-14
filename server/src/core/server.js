@@ -37,15 +37,15 @@ class Server {
     log.success(`The current env is ${process.env.SIA_NODE_ENV}`)
     log.success(`The current version is ${version}`)
 
-    if (!Object.keys(langs).includes(process.env.LEON_LANG) === true) {
-      process.env.LEON_LANG = 'en-US'
+    if (!Object.keys(langs).includes(process.env.SIA_LANG) === true) {
+      process.env.SIA_LANG = 'en-US'
       log.warning('The language you chose is not supported, then the default language has been applied')
     }
 
-    log.success(`The current language is ${process.env.LEON_LANG}`)
+    log.success(`The current language is ${process.env.SIA_LANG}`)
     log.success(`The current time zone is ${date.timeZone()}`)
 
-    const sLogger = (process.env.LEON_LOGGER !== 'true') ? 'disabled' : 'enabled'
+    const sLogger = (process.env.SIA_LOGGER !== 'true') ? 'disabled' : 'enabled'
     log.success(`Collaborative logger ${sLogger}`)
 
     await this.bootstrap()
@@ -116,19 +116,19 @@ class Server {
         let sttState = 'disabled'
         let ttsState = 'disabled'
 
-        this.brain = new Brain(socket, langs[process.env.LEON_LANG].short)
+        this.brain = new Brain(socket, langs[process.env.SIA_LANG].short)
         this.nlu = new Nlu(this.brain)
         this.asr = new Asr()
 
         /* istanbul ignore if */
-        if (process.env.LEON_STT === 'true') {
+        if (process.env.SIA_STT === 'true') {
           sttState = 'enabled'
 
-          this.stt = new Stt(socket, process.env.LEON_STT_PROVIDER)
+          this.stt = new Stt(socket, process.env.SIA_STT_PROVIDER)
           this.stt.init()
         }
 
-        if (process.env.LEON_TTS === 'true') {
+        if (process.env.SIA_TTS === 'true') {
           ttsState = 'enabled'
         }
 

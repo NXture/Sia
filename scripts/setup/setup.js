@@ -20,7 +20,7 @@ import setupPythonPackages from './setup-python-packages'
     const info = os.get()
 
     // Required env vars to setup
-    process.env.LEON_LANG = 'en-US'
+    process.env.SIA_LANG = 'en-US'
     process.env.PIPENV_PIPFILE = 'bridges/python/Pipfile'
     process.env.PIPENV_VENV_IN_PROJECT = 'true'
 

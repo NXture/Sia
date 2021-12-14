@@ -8,7 +8,7 @@ const parser = { }
 let client = { }
 
 parser.conf = {
-  languageCode: process.env.LEON_LANG,
+  languageCode: process.env.SIA_LANG,
   encoding: 'LINEAR16',
   sampleRateHertz: 16000
 }
