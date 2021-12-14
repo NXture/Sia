@@ -4,7 +4,7 @@ import fs from 'fs'
 import log from '@/helpers/log'
 
 /**
- * Download and setup Leon's packages Python dependencies
+ * Download and setup Sia's packages Python dependencies
  */
 export default () => new Promise(async (resolve, reject) => {
   log.info('Checking Python env...')

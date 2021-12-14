@@ -13,7 +13,7 @@ import setupPythonPackages from './setup-python-packages'
 // Do not load ".env" file because it is not created yet
 
 /**
- * Main entry to setup Leon
+ * Main entry to setup Sia
  */
 (async () => {
   try {
@@ -40,7 +40,7 @@ import setupPythonPackages from './setup-python-packages'
     }
 
     log.default('')
-    log.success('Hooray! Leon is installed and ready to go!')
+    log.success('Hooray! Sia is installed and ready to go!')
     loader.stop()
   } catch (e) {
     log.error(e)

@@ -97,7 +97,7 @@ class Brain {
       const queryId = `${Date.now()}-${string.random(4)}`
       const queryObjectPath = `${__dirname}/../tmp/${queryId}.json`
 
-      // Ask to repeat if Leon is not sure about the request
+      // Ask to repeat if Sia is not sure about the request
       if (obj.classification.confidence < langs[process.env.SIA_LANG].min_confidence) {
         this.talk(`${this.wernicke('random_not_sure')}.`, true)
         this.socket.emit('is-typing', false)

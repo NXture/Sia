@@ -194,7 +194,7 @@ export default () => new Promise(async (resolve, reject) => {
 
     log.default('')
     if (report.can_run.v && report.can_run_module.v && report.can_text.v) {
-      log.success('Hooray! Leon can run correctly')
+      log.success('Hooray! Sia can run correctly')
       log.info('If you have some yellow warnings, it is all good. It means some entities are not yet configured')
     } else {
       log.error('Please fix the errors above')

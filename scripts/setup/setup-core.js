@@ -4,7 +4,7 @@ import path from 'path'
 import log from '@/helpers/log'
 
 /**
- * Setup Leon's core configuration
+ * Setup Sia's core configuration
  */
 export default () => new Promise((resolve) => {
   log.info('Configuring core...')

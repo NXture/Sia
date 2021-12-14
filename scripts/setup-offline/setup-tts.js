@@ -30,7 +30,7 @@ export default () => new Promise(async (resolve, reject) => {
       await command(`cd ${tmpDir} && tar xfvj flite-2.1-release.tar.bz2 && cp ../assets/sia.lv flite-2.1-release/config`, { shell: true })
       log.success('Unpack done')
       log.info('Configuring...')
-      await command(`cd ${tmpDir}/flite-2.1-release && ./configure --with-langvox=leon`, { shell: true })
+      await command(`cd ${tmpDir}/flite-2.1-release && ./configure --with-langvox=sia`, { shell: true })
       log.success('Configure done')
       log.info('Building...')
       await command(`cd ${tmpDir}/flite-2.1-release && make ${makeCores}`, { shell: true })

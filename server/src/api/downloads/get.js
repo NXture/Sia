@@ -54,7 +54,7 @@ const getDownloads = async (fastify, options) => {
               clean(downloadsDir, files)
             } else {
               log.info('Deleting previous archives...')
-              const zipSlug = `leon-${request.query.package}-${request.query.module}`
+              const zipSlug = `sia-${request.query.package}-${request.query.module}`
               const pkgFiles = fs.readdirSync(dlPackageDir)
 
               for (let i = 0; i < pkgFiles.length; i += 1) {

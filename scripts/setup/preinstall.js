@@ -7,7 +7,7 @@ const { execSync } = require('child_process')
  */
 
 if (os.type().indexOf('Windows') !== -1) {
-  console.warn('\x1b[33m❗ %s\x1b[0m', 'The Leon\'s voice offline mode is not available on Windows')
+  console.warn('\x1b[33m❗ %s\x1b[0m', 'The Sia\'s voice offline mode is not available on Windows')
   console.info('\x1b[36m➡ %s\x1b[0m', 'Backing up package.json...')
   fs.copyFileSync('package.json', 'package.json.backup')
   console.log('\x1b[32m✔ %s\x1b[0m', 'package.json has been backed up')
@@ -16,4 +16,4 @@ if (os.type().indexOf('Windows') !== -1) {
   console.log('\x1b[32m✔ %s\x1b[0m', 'DeepSpeech dependency has been removed.')
 }
 
-console.info('\x1b[36m➡ %s\x1b[0m', 'Running Leon\'s installation...')
+console.info('\x1b[36m➡ %s\x1b[0m', 'Running Sia\'s installation...')
