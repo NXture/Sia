@@ -67,7 +67,7 @@ git clone -b master https://github.com/NXture/Sia.git sia
 
 
 # Go to the project root
-cd Sia
+cd sia
 
 # Install
 npm install
