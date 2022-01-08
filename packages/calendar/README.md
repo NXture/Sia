@@ -35,18 +35,4 @@ Manage your to-do lists:
 (en-US) "Delete my cinema list"
 (en-US) "Show my lists"
 
-(fr-FR) "Show my lists"
-(fr-FR) "Ajoute 7 pommes de terre, 1kg de riz, pain à la liste courses"
-(fr-FR) "Complète riz de la liste courses"
-(fr-FR) "Coche pain de la liste courses"
-(fr-FR) "Qu'est-ce qu'il y a dans ma liste courses ?"
-(fr-FR) "Crée une liste films"
-(fr-FR) "Ajoute Captain America : Guerre Civile à ma liste films"
-(fr-FR) "Quelles sont mes listes ?"
-(fr-FR) "Renomme la liste films en cinéma"
-(fr-FR) "Qu'est-ce qu'il y a dans ma liste cinéma ?"
-(fr-FR) "Décoche Captain America de ma liste cinéma"
-(fr-FR) "Montre ma liste cinéma"
-(fr-FR) "Supprime ma liste cinéma"
-(fr-FR) "Montre mes listes"
 ```
