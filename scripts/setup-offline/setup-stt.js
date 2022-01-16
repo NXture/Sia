@@ -12,7 +12,7 @@ export default () => new Promise(async (resolve, reject) => {
 
   const destDeepSpeechFolder = 'bin/deepspeech'
   const tmpDir = 'scripts/tmp'
-  const deepSpeechVersion = '0.8.2'
+  const deepSpeechVersion = '0.9.3'
   let downloader = 'wget'
   if (os.get().type === 'macos') {
     downloader = 'curl -L -O'
