@@ -17,8 +17,8 @@
     "url": "https://github.com/NXture/Sia/issues"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8.0.0"
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
   },
   "scripts": {
     "lint": "babel-node scripts/lint.js",
