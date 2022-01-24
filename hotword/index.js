@@ -1,5 +1,5 @@
 /**
- * This file allows to run a separate node to detect the wake word "Sia"
+ * This file allows to run a separate node to detect the wake word "Leon/Léon"
  * You can consider to run this file on a different hardware
  */
 
@@ -7,12 +7,12 @@
 
 const request = require('superagent')
 const record = require('node-record-lpcm16')
-const { Detector, Models } = require('snowboy')
+const { Detector, Models } = require('@bugsounet/snowboy')
 const { io } = require('socket.io-client')
 
-process.env.SIA_HOST = process.env.SIA_HOST || 'http://localhost'
-process.env.SIA_PORT = process.env.SIA_PORT || 1337
-const url = `${process.env.SIA_HOST}:${process.env.SIA_PORT}`
+process.env.LEON_HOST = process.env.LEON_HOST || 'http://localhost'
+process.env.LEON_PORT = process.env.LEON_PORT || 1337
+const url = `${process.env.LEON_HOST}:${process.env.LEON_PORT}`
 const socket = io(url)
 
 socket.on('connect', () => {
@@ -39,7 +39,7 @@ request.get(`${url}/v1/info`)
       })
 
       const detector = new Detector({
-        resource: `${__dirname}/node_modules/snowboy/resources/common.res`,
+        resource: `${__dirname}/node_modules/@bugsounet/snowboy/resources/common.res`,
         models,
         audioGain: 2.0,
         applyFrontend: true
