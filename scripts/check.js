@@ -22,7 +22,7 @@ export default () => new Promise(async (resolve, reject) => {
     const googleCloudPath = 'server/src/config/voice/google-cloud.json'
     const watsonSttPath = 'server/src/config/voice/watson-stt.json'
     const watsonTtsPath = 'server/src/config/voice/watson-tts.json'
-    const nlpModelPath = 'server/src/data/leon-model.nlp'
+    const nlpModelPath = 'server/src/data/sia-model.nlp'
     const report = {
       can_run: { title: 'Run', type: 'error', v: true },
       can_run_module: { title: 'Run modules', type: 'error', v: true },
@@ -194,7 +194,7 @@ export default () => new Promise(async (resolve, reject) => {
 
     log.default('')
     if (report.can_run.v && report.can_run_module.v && report.can_text.v) {
-      log.success('Hooray! Leon can run correctly')
+      log.success('Hooray! Sia can run correctly')
       log.info('If you have some yellow warnings, it is all good. It means some entities are not yet configured')
     } else {
       log.error('Please fix the errors above')
