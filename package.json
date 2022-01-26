@@ -40,7 +40,7 @@
     "wake": "cross-env SIA_HOST=http://localhost SIA_PORT=1337 node hotword/index.js",
     "delete-dist:server": "shx rm -rf ./server/dist",
     "prepare": "husky install",
-    "build": "npm run lint && npm run build:app && npm run build:server",
+    "build": "npm run build:app && npm run build:server",
     "build:app": "cross-env SIA_NODE_ENV=production babel-node scripts/app/run-build-app.js",
     "build:server": "npm run delete-dist:server && npm run train && babel ./server/src -d ./server/dist --copy-files && shx mkdir -p server/dist/tmp",
     "start": "cross-env SIA_NODE_ENV=production node ./server/dist/index.js",
