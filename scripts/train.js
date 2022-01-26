@@ -18,10 +18,10 @@ dotenv.config()
 export default () => new Promise(async (resolve, reject) => {
   const { argv } = process
   const packagesDir = 'packages'
-  const modelFileName = 'server/src/data/leon-model.nlp'
+  const modelFileName = 'server/src/data/sia-model.nlp'
   const lang = argv[2]
     ? argv[2].toLowerCase()
-    : langs[process.env.LEON_LANG].short.toLowerCase().substr(0, 2)
+    : langs[process.env.SIA_LANG].short.toLowerCase().substr(0, 2)
 
   try {
     const dock = await dockStart({ use: ['Basic'] })
