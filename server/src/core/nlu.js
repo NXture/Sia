@@ -89,7 +89,7 @@ class Nlu {
     }
 
     /* istanbul ignore next */
-    if (process.env.SIA_LOGGER === 'true' && process.env.SIA_NODE_ENV !== 'testing') {
+    if (process.env.SIA_LOGGER === 'false' && process.env.SIA_NODE_ENV !== 'testing') {
       this.request
         .post('https://logger.getleon.ai/v1/expressions')
         .set('X-Origin', 'leon-core')
