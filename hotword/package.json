@@ -1,7 +1,7 @@
 {
-  "name": "leon-hotword",
+  "name": "sia-hotword",
   "version": "0.2.0",
-  "description": "Hotword detection for Leon",
+  "description": "Hotword detection for Sia",
   "author": {
     "name": "Louis Grenard",
     "email": "louis.grenard@gmail.com",
