@@ -8,10 +8,11 @@
     "<rootDir>/test/unit/**/*.spec.js"
   ],
   "setupFiles": [
-    "jest-extended/all",
+    "jest-canvas-mock",
     "<rootDir>/test/paths.setup.js"
   ],
   "setupFilesAfterEnv": [
+    "jest-extended/all",
     "<rootDir>/test/unit/unit.setup.js"
   ],
   "coverageDirectory": "<rootDir>/test/coverage",
