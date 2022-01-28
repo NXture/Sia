@@ -11,6 +11,7 @@ logs/*
 server/src/config/**/*.json
 bin/deepspeech/*
 bin/flite/*
+bin/coqui/*
 
 *.pyc
 .DS_Store
