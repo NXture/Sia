@@ -5,18 +5,6 @@
       "min_confidence": 0.5,
       "fallbacks": [
       ]
-    },
-    "fr-FR": {
-      "short": "fr",
-      "min_confidence": 0.5,
-      "fallbacks": [
-        {
-          "words": ["merci"],
-          "package": "sia",
-          "module": "welcome",
-          "action": "run"
-        }
-      ]
     }
 	}
 }
