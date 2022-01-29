@@ -18,98 +18,110 @@ dirname = path.dirname(path.realpath(__file__))
 queryobjectpath = argv[1]
 codes = []
 
-queryobjfile = open(queryobjectpath, 'r', encoding = 'utf8')
+queryobjfile = open(queryobjectpath, 'r', encoding='utf8')
 queryobj = loads(queryobjfile.read())
 queryobjfile.close()
 
+
 def getqueryobj():
-	"""Return query object"""
+    """Return query object"""
 
-	return queryobj
+    return queryobj
 
-def translate(key, d = { }):
-	"""Pickup the language file according to the cmd arg
-	and return the value regarding to the params"""
 
-	output = ''
+def translate(key, d={}):
+    """Pickup the language file according to the cmd arg
+    and return the value regarding to the params"""
 
-	file = open(dirname + '/../../packages/' + queryobj['package'] + '/' + 'data/answers/' + queryobj['lang'] + '.json', 'r', encoding = 'utf8')
-	obj = loads(file.read())
-	file.close()
+    output = ''
 
-	prop = obj[queryobj['module']][key]
-	if isinstance(prop, list):
-		output = choice(prop)
-	else:
-		output = prop
+    file = open(dirname + '/../../packages/' +
+                queryobj['package'] + '/' + 'data/answers/' + queryobj['lang'] + '.json', 'r', encoding='utf8')
+    obj = loads(file.read())
+    file.close()
 
-	if d:
-		for k in d:
-			output = output.replace('%' + k + '%', str(d[k]))
+    prop = obj[queryobj['module']][key]
+    if isinstance(prop, list):
+        output = choice(prop)
+    else:
+        output = prop
 
-	# "Temporize" for the data buffer ouput on the core
-	sleep(0.1)
+    if d:
+        for k in d:
+            output = output.replace('%' + k + '%', str(d[k]))
 
-	return output
+    # "Temporize" for the data buffer ouput on the core
+    sleep(0.1)
 
-def output(type, code, speech = ''):
-	"""Communicate with the Core"""
+    return output
 
-	codes.append(code)
 
-	print(dumps({
-		'package': queryobj['package'],
-		'module': queryobj['module'],
-		'action': queryobj['action'],
-		'lang': queryobj['lang'],
-		'input': queryobj['query'],
-		'entities': queryobj['entities'],
-		'output': {
-			'type': type,
-			'codes': codes,
-			'speech': speech,
-			'options': config('options')
-		}
-	}))
+def output(type, code, speech=''):
+    """Communicate with the Core"""
 
-	if (type == 'inter'):
-		stdout.flush()
+    codes.append(code)
 
-def http(method, url, headers = None):
-	"""Send HTTP request with the Sia user agent"""
+    print(dumps({
+        'package': queryobj['package'],
+        'module': queryobj['module'],
+        'action': queryobj['action'],
+        'lang': queryobj['lang'],
+        'input': queryobj['query'],
+        'entities': queryobj['entities'],
+        'output': {
+                'type': type,
+                'codes': codes,
+                'speech': speech,
+                'options': config('options')
+                }
+    }))
 
-	session = requests.Session()
-	session.headers.update({ 'User-Agent': useragent, 'Cache-Control': 'no-cache' })
+    if (type == 'inter'):
+        stdout.flush()
 
-	if headers != None:
-	  session.headers.update(headers)
 
-	return session.request(method, url)
+def http(method, url, headers=None):
+    """Send HTTP request with the Sia user agent"""
+
+    session = requests.Session()
+    session.headers.update(
+        {'User-Agent': useragent, 'Cache-Control': 'no-cache'})
+
+    if headers != None:
+        session.headers.update(headers)
+
+    return session.request(method, url)
+
 
 def config(key):
-	"""Get a package configuration value"""
+    """Get a package configuration value"""
 
-	file = open(dirname + '/../../packages/' + queryobj['package'] + '/config/config.json', 'r', encoding = 'utf8')
-	obj = loads(file.read())
-	file.close()
+    file = open(dirname + '/../../packages/' +
+                queryobj['package'] + '/config/config.json', 'r', encoding='utf8')
+    obj = loads(file.read())
+    file.close()
 
-	return obj[queryobj['module']][key]
+    return obj[queryobj['module']][key]
+
 
 def createdldir():
-	"""Create the downloads folder of a current module"""
+    """Create the downloads folder of a current module"""
 
-	dldir = path.dirname(path.realpath(__file__)) + '/../../downloads/'
-	moduledldir = dldir + queryobj['package'] + '/' + queryobj['module']
+    dldir = path.dirname(path.realpath(__file__)) + '/../../downloads/'
+    moduledldir = dldir + queryobj['package'] + '/' + queryobj['module']
 
-	Path(moduledldir).mkdir(parents = True, exist_ok = True)
+    Path(moduledldir).mkdir(parents=True, exist_ok=True)
 
-	return moduledldir
+    return moduledldir
 
-def db(dbtype = 'tinydb'):
-	"""Create a new dedicated database
-	for a specific package"""
 
-	if dbtype == 'tinydb':
-		ext = '.json' if environ.get('SIA_NODE_ENV') != 'testing' else '.spec.json'
-		db = TinyDB(dirname + '/../../packages/' + queryobj['package'] + '/data/db/' + queryobj['package'] + ext)
-		return { 'db': db, 'query': Query, 'operations': operations }
+def db(dbtype='tinydb'):
+    """Create a new dedicated database
+    for a specific package"""
+
+    if dbtype == 'tinydb':
+        ext = '.json' if environ.get(
+            'SIA_NODE_ENV') != 'testing' else '.spec.json'
+        db = TinyDB(dirname + '/../../packages/' +
+                    queryobj['package'] + '/data/db/' + queryobj['package'] + ext)
+        return {'db': db, 'query': Query, 'operations': operations}
