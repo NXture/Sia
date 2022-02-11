@@ -42,12 +42,6 @@ If you want to, Sia can communicate with you by being **offline to protect your 
 
 Sounds cool right?
 
-## ☁️ Try with a Single-Click
-
-Gitpod will automatically setup an environment and run an instance for you.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/NXture/Sia)
-
 ## 🚀 Getting Started
 
 ### Prerequisites
@@ -91,16 +85,14 @@ npm start
 
 **Sia needs open source to live**, the more modules she has, the more skillful she becomes.
 
+## ☁️ Try with a Single-Click
 
-## 👨 Author
+Gitpod will automatically setup an environment and run an instance for you.
 
-**Varun Srivatsa** ([@Varun27101](https://twitter.com/Varun27101))
-
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/NXture/Sia)
 
 ## 📝 License
 [MIT License](https://github.com/NXture/Sia/blob/main/LICENSE.md)
 
 Copyright (c) 2021-present, Varun Srivatsa <varunsrivatsa27@gmail.com>
 
-## Cheers!
-![Cheers!](https://github.githubassets.com/images/icons/emoji/unicode/1f379.png "Cheers!")
