@@ -13,10 +13,7 @@ log.title('Watson TTS Synthesizer')
 const synthesizer = { }
 const voices = {
   'en-US': {
-    voice: 'en-US_MichaelV3Voice'
-  },
-  'fr-FR': {
-    voice: 'fr-FR_NicolasV3Voice'
+    voice: 'en-US_AllisonV3Voice'
   }
 }
 let client = { }
