@@ -9,9 +9,7 @@ from sys import argv, stdout
 from vars import useragent
 from tinydb import TinyDB, Query, operations
 from time import sleep
-import sqlite3
 import requests
-import re
 
 dirname = path.dirname(path.realpath(__file__))
 
