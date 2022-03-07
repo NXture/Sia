@@ -23,6 +23,20 @@
       ]
     }
   },
+  "datetime": {
+    "run": {
+      "expressions": [
+        "Date and Time Please?",
+        "What's the time?",
+        "What's the date?",
+        "Hi, Can you tell me the date and time?",
+        "What's the date and time?",
+        "What day is today?",
+        "what day is it?",
+        "Today is which day?"
+      ]
+    }
+  },
   "joke": {
     "run": {
       "expressions": [
