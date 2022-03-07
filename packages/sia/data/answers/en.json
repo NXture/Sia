@@ -6,6 +6,15 @@
       "Firstly, I'm not a criminal as you might relatively think about a popular movie. Secondly, Varun is the guy who gave me life. Thirdly, I'm your personal assistant and I'm very glad to help you."
 		]
 	},
+	"howareyou": {
+		"howareyou": [
+			"Fine, thanks. It's a beautiful day.",
+			"I'm fine, maybe a little tired. I need some more coffee.",
+			"Thanks for asking. I'm doing well.",
+			"Things are Good.",
+			"I'm good, hope you are also doing well."
+		]
+	},
 	"joke": {
 		"jokes": [
 			"My email password has been hacked. That's the third time I've had to rename the cat.",
