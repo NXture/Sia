@@ -1,9 +1,9 @@
 {
-	"whoami": {
+  "whoami": {
     "run": {
       "expressions": [
         "Who are you?",
-        "How they call you?",
+        "What do they call you?",
         "What's your name?",
         "Tell me who you are",
         "Introduce yourself"
@@ -23,7 +23,7 @@
       ]
     }
   },
-	"joke": {
+  "joke": {
     "run": {
       "expressions": [
         "Tell me a joke",
@@ -33,7 +33,7 @@
       ]
     }
   },
-	"greeting": {
+  "greeting": {
     "run": {
       "expressions": [
         "Hi",
@@ -48,7 +48,7 @@
       ]
     }
   },
-	"welcome": {
+  "welcome": {
     "run": {
       "expressions": [
         "Thank you",
@@ -59,7 +59,7 @@
       ]
     }
   },
-	"meaningoflife": {
+  "meaningoflife": {
     "run": {
       "expressions": [
         "What is the meaning of life?",
@@ -67,7 +67,7 @@
       ]
     }
   },
-	"randomnumber": {
+  "randomnumber": {
     "run": {
       "expressions": [
         "Give me a random number",
@@ -77,17 +77,10 @@
         "Pick a number"
       ]
     }
-
   },
-	"bye": {
+  "bye": {
     "run": {
-      "expressions": [
-        "Bye",
-        "Goodbye",
-        "Good bye",
-        "See you later",
-        "Bye bye"
-      ]
+      "expressions": ["Bye", "Goodbye", "Good bye", "See you later", "Bye bye"]
     }
   },
   "partnerassistant": {
