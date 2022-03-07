@@ -10,6 +10,19 @@
       ]
     }
   },
+  "howareyou": {
+    "run": {
+      "expressions": [
+        "How are you?",
+        "How's everything?",
+        "How are you doing?",
+        "Are you well?",
+        "What's new?",
+        "You all right?",
+        "What's up?"
+      ]
+    }
+  },
 	"joke": {
     "run": {
       "expressions": [
