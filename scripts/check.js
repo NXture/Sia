@@ -177,23 +177,6 @@ export default () =>
 
       // TTS checking
 
-      log.info("Amazon Polly TTS");
-      try {
-        const json = JSON.parse(fs.readFileSync(amazonPath));
-        if (
-          json.credentials.accessKeyId === "" ||
-          json.credentials.secretAccessKey === ""
-        ) {
-          report.can_amazon_polly_tts.v = false;
-          log.warning("Amazon Polly TTS is not yet configured\n");
-        } else {
-          log.success("Configured\n");
-        }
-      } catch (e) {
-        report.can_amazon_polly_tts.v = false;
-        log.warning(`Amazon Polly TTS is not yet configured: ${e}\n`);
-      }
-
       log.info("Google Cloud TTS/STT");
       try {
         const json = JSON.parse(fs.readFileSync(googleCloudPath));
@@ -232,21 +215,34 @@ export default () =>
         log.warning(`Watson TTS is not yet configured: ${e}\n`);
       }
 
+      log.info("Amazon Polly TTS");
+      try {
+        const json = JSON.parse(fs.readFileSync(amazonPath));
+        if (
+          json.credentials.accessKeyId === "" ||
+          json.credentials.secretAccessKey === ""
+        ) {
+          report.can_amazon_polly_tts.v = false;
+          log.warning("Amazon Polly TTS is not yet configured\n");
+        } else {
+          log.success("Configured\n");
+        }
+      } catch (e) {
+        report.can_amazon_polly_tts.v = false;
+        log.warning(`Amazon Polly TTS is not yet configured: ${e}\n`);
+      }
+
       log.info("Azure TTS");
       try {
         const json = JSON.parse(fs.readFileSync(azureTtsPath));
-        const results = [];
-        Object.keys(json).forEach((item) => {
-          if (json[item] === "") results.push(false);
-        });
-        if (results.includes(false)) {
+        if (json.key === "" || json.region == "") {
           report.can_azure_tts.v = false;
           log.warning("Azure TTS is not yet configured\n");
         } else {
           log.success("Configured\n");
         }
       } catch (e) {
-        report.can_watson_tts.v = false;
+        report.can_azure_tts.v = false;
         log.warning(`Azure TTS is not yet configured: ${e}\n`);
       }
 
