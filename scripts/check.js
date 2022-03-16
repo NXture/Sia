@@ -20,7 +20,7 @@ export default () =>
       const flitePath = "bin/flite/flite";
       const conquiLanguageModelPath = "bin/coqui/huge-vocabulary.scorer";
       const amazonPath = "server/src/config/voice/amazon.json";
-      const azureTtsPath = "server/scr/config/voice/azure-tts.json";
+      const azureTtsPath = "server/src/config/voice/azure-tts.json";
       const googleCloudPath = "server/src/config/voice/google-cloud.json";
       const watsonSttPath = "server/src/config/voice/watson-stt.json";
       const watsonTtsPath = "server/src/config/voice/watson-tts.json";
@@ -235,7 +235,11 @@ export default () =>
       log.info("Azure TTS");
       try {
         const json = JSON.parse(fs.readFileSync(azureTtsPath));
-        if (json.key === "" || json.region == "") {
+        const results = [];
+        Object.keys(json).forEach((item) => {
+          if (json[item] === "") results.push(false);
+        });
+        if (results.includes(false)) {
           report.can_azure_tts.v = false;
           log.warning("Azure TTS is not yet configured\n");
         } else {
