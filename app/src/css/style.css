@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800);
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono&display=swap);
 
 html,
 body,
@@ -110,7 +111,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 
@@ -135,7 +136,7 @@ ul li {
 body {
   color: #fff;
   background-color: #121212;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
 }
 body > * {
@@ -146,7 +147,7 @@ body.settingup > * {
 }
 body.settingup::after {
   position: absolute;
-  content: "";
+  content: '';
   width: 32px;
   height: 32px;
   background-color: #777;
@@ -211,15 +212,62 @@ small {
   height: 40px;
 }
 
-#feed {
-  box-shadow: rgba(255, 255, 255, 0.4) 0px 4px 12px;
+/*Gradient effect for border*/
+.gradient-border {
+  --borderWidth: 6px;
+  background: #121212;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(
+    60deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#feed1 {
   position: absolute;
   width: 100%;
   top: 10%;
   height: 50%;
+}
+
+#feed {
+  font-family: 'Space Mono', monospace;
+  position: absolute;
+  width: 100%;
+  height: 100%;
   overflow-y: auto;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 12px;
 }
 #feed::-webkit-scrollbar {
   width: 6px;
@@ -256,15 +304,18 @@ small {
 }
 #is-typing .circle:nth-child(1) {
   animation: typing 0.2s linear infinite alternate;
-  background-color: #b00020;
+  background-color: #f71735;
+  background-image: linear-gradient(147deg, #f71735 0%, #db3445 74%);
 }
 #is-typing .circle:nth-child(2) {
   animation: typing 0.2s 0.2s linear infinite alternate;
-  background-color: #fff;
+  background-color: #fc9842;
+  background-image: linear-gradient(315deg, #fc9842 0%, #fe5f75 74%);
 }
 #is-typing .circle:nth-child(3) {
   animation: typing 0.2s linear infinite alternate;
-  background-color: #cf6679;
+  background-color: #f9c1b1;
+  background-image: linear-gradient(315deg, #f9c1b1 0%, #fb8085 74%);
 }
 @keyframes typing {
   100% {
@@ -298,7 +349,7 @@ small {
   right: 0;
 }
 #feed .sia .bubble {
-  background-color: #bb86fc;
+  background-color: #d9d7f1;
   color: #000000;
 }
 @keyframes fadeIn {
@@ -339,7 +390,7 @@ button:not(.enabled) {
   margin-left: -26px;
 }
 button:hover {
-  background-color: #03dac6;
+  background-color: #0384dac4;
 }
 button.enabled {
   background-color: #00e676;

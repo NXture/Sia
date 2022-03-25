@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8" />
-  <link rel="stylesheet" href="/css/style.css" />
-  <link rel="icon" type="image/png" href="/img/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sia</title>
-</head>
-<body class="settingup">
-	<main>
-    <div id="feed">
-      <p id="no-bubble" class="hide">
-        You can start to interact with Sia, don't be shy.
-      </p>
-    </div>
-    <div id="is-typing">
-      <div class="circle"></div>
-      <div class="circle"></div>
-      <div class="circle"></div>
-    </div>
-    <div id="input-container">
-      <div id="mic-container">
-        <button></button>
-        <div id="sonar"></div>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sia</title>
+  </head>
+  <body class="settingup">
+    <main>
+      <div class="gradient-border" id="feed1">
+        <div id="feed">
+          <p id="no-bubble" class="hide">
+            You can start to interact with Sia, don't be shy.
+          </p>
+        </div>
       </div>
-      <label for="query"></label>
-      <input type="text" id="query" autocomplete="off" autofocus>
-      <small>
-        Use <kbd>↑</kbd> <kbd>↓</kbd> to browse history;
-        <kbd>↵</kbd> to submit;
-        <kbd>alt + c to listen.</kbd>
-      </small>
-    </div>
-	</main>
-	<footer>
-		<div id="version">
-			<small>v</small>
-		</div>
-    <p>Sia is still learning 📖 </p>
-    <div id="logger">
-      <small class="italic">
-        Collaborative logger
-      </small>
-    </div>
-	</footer>
-  <script type="module" src="/js/main.js"></script>
-</body>
+
+      <div id="is-typing">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <div id="input-container">
+        <div id="mic-container">
+          <button></button>
+          <div id="sonar"></div>
+        </div>
+        <label for="query"></label>
+        <input type="text" id="query" autocomplete="off" autofocus />
+        <small>
+          Use <kbd>↑</kbd> <kbd>↓</kbd> to browse history; <kbd>↵</kbd> to
+          submit;
+          <kbd>alt + c to listen.</kbd>
+        </small>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <div id="version">
+          <small>v</small>
+        </div>
+        <p>Sia is still learning 📖</p>
+        <div id="logger">
+          <small class="italic"> Collaborative logger </small>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/js/main.js"></script>
+  </body>
 </html>
