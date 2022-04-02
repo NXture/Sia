@@ -23,34 +23,12 @@
             "conditions": [
               {
                 "type": "after_first",
-                "from": "music"
-              },
-              {
-                "type": "after_first",
-                "from": "song"
-              },
-              {
-                "type": "after_first",
-                "from": "track"
-              },
-              {
-                "type": "after_first",
-                "from": "tune"
+                "from": ["music", "song", "track", "tune"]
               },
               {
                 "type": "between",
-                "from": "song",
-                "to": "by"
-              },
-              {
-                "type": "between",
-                "from": "track",
-                "to": "by"
-              },
-              {
-                "type": "between",
-                "from": "tune",
-                "to": "by"
+                "from": ["track", "tune"],
+                "to": ["by", "by"]
               }
             ]
           },
@@ -60,15 +38,7 @@
             "conditions": [
               {
                 "type": "after_first",
-                "from": "artist"
-              },
-              {
-                "type": "after_first",
-                "from": "group"
-              },
-              {
-                "type": "after_first",
-                "from": "by"
+                "from": ["artist", "group", "by"]
               }
             ]
           },
@@ -131,34 +101,12 @@
             "conditions": [
               {
                 "type": "after_first",
-                "from": "music"
-              },
-              {
-                "type": "after_first",
-                "from": "song"
-              },
-              {
-                "type": "after_first",
-                "from": "track"
-              },
-              {
-                "type": "after_first",
-                "from": "tune"
+                "from": ["music", "song", "track", "tune"]
               },
               {
                 "type": "between",
-                "from": "song",
-                "to": "by"
-              },
-              {
-                "type": "between",
-                "from": "track",
-                "to": "by"
-              },
-              {
-                "type": "between",
-                "from": "tune",
-                "to": "by"
+                "from": ["song","track", "tune"],
+                "to": ["by", "by", "by"]
               }
             ]
           },
@@ -168,15 +116,7 @@
             "conditions": [
               {
                 "type": "after_first",
-                "from": "artist"
-              },
-              {
-                "type": "after_first",
-                "from": "group"
-              },
-              {
-                "type": "after_first",
-                "from": "by"
+                "from": ["artist", "group", "by"]
               }
             ]
           },

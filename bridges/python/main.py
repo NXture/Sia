@@ -10,7 +10,7 @@ from importlib import import_module
 def main():
     """Dynamically import modules related to the args and print the ouput"""
 
-    path.append('./')
+    path.append('.')
 
     queryobj = utils.getqueryobj()
     m = import_module(

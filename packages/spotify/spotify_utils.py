@@ -5,8 +5,8 @@ import base64
 import socket
 import time
 import requests
-import urlencode
-import utils
+from urllib.parse import urlencode
+from bridges.python import utils
 
 track_str = 'track'
 artist_str = 'artist'

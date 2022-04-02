@@ -6,12 +6,10 @@ import json
 import time
 import webbrowser
 import requests
-import urlencode
+from urllib.parse import urlencode
 
-import utils
-from packages.spotify.spotify_utils import parse_entities, get_device, spotify_request, logged_in, can_play, \
-    display_track, display_album, display_playlist, display_artist
-from packages.spotify.spotify_utils import track_str, album_str, artist_str, playlist_str
+from bridges.python import utils
+from packages.spotify.spotify_utils import parse_entities, get_device, spotify_request, logged_in, can_play, display_track, display_album, display_playlist, display_artist, track_str, album_str, artist_str, playlist_str
 
 
 def login(string, entities):
