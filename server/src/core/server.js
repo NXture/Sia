@@ -65,6 +65,9 @@ class Server {
     this.fastify.get('/', (_request, reply) => {
       reply.sendFile('index.html')
     })
+    this.fastify.get('/spotify_auth', (_request, reply) => {
+      reply.sendFile('spotify_auth.html')
+    })
 
     this.fastify.register(infoPlugin, { apiVersion })
     this.fastify.register(downloadsPlugin, { apiVersion })
