@@ -10,6 +10,15 @@
       ]
     }
   },
+  "weather": {
+    "run": {
+      "expressions" : [
+        "What is the weather?",
+        "How is the weather?",
+        "Weather"
+      ]
+    }
+  },
   "howareyou": {
     "run": {
       "expressions": [

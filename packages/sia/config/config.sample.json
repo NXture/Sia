@@ -28,5 +28,9 @@
   },
   "datetime": {
     "options": {}
+  },
+  "weather": {
+    "api_key": "PASTE API KEY HERE",
+    "options": {}
   }
 }

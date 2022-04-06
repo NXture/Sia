@@ -15,6 +15,9 @@
       "I'm good, hope you are also doing well."
     ]
   },
+  "weather": {
+    "weather_checked": ["success", "weather is good", "checking the weather"]
+  },
   "joke": {
     "jokes": [
       "My email password has been hacked. That's the third time I've had to rename the cat.",

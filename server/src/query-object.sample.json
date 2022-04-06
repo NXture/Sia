@@ -1,9 +1,9 @@
 {
   "lang": "en",
-  "package": "spotify",
-  "module": "spotify",
+  "package": "sia",
+  "module": "weather",
   "action": "run",
-  "query": "show me info about the song derp",
+  "query": "How is the weather in delhi",
   "entities": [
     {
       "sourceText": "github.com",
