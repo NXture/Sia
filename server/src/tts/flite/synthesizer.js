@@ -12,10 +12,10 @@ log.title('Flite Synthesizer')
 const synthesizer = { }
 
 synthesizer.conf = {
-  int_f0_target_mean: 200, // Intonation (85-180 Hz men; 165-255 Hz women)
+  int_f0_target_mean: 240, // Intonation (85-180 Hz men; 165-255 Hz women)
   f0_shift: 1.0, // Low or high
-  duration_stretch: 1.0, // Speed (lower = faster)
-  int_f0_target_stddev: 15.0 // Pitch variability (lower = more flat)
+  duration_stretch: 0.9, // Speed (lower = faster)
+  int_f0_target_stddev: 10.0 // Pitch variability (lower = more flat)
 }
 
 /**
