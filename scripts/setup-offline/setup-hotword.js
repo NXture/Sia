@@ -22,7 +22,7 @@ export default () => new Promise(async (resolve, reject) => {
     try {
       log.info('Installing dependencies...')
 
-      let cmd = `sudo ${pkgm} sox libsox-fmt-all -y`
+      let cmd = `sudo ${pkgm} sox libsox-fmt-all libatlas-base-dev -y`
       if (info.type === 'linux') {
         log.info(`Executing the following command: ${cmd}`)
         await command(cmd, { shell: true })
